@@ -7,7 +7,7 @@ var PostsController = { //this refers to class PostsController
     Post.find(function(err, posts) {    // find is equivalent to select all in SQL
       if (err) { throw err; }       // if it returns an error throw the error
 
-      res.render('posts/index', { posts: posts.reverse() });  // otherwise render the post index view passing posts from the find in reversed order
+      res.render('posts/index', { posts: posts.reverse(), title: "A page title"  });  // otherwise render the post index view passing posts from the find in reversed order
     }); //this function shows all of the posts in reverse order (from newest to oldest)
   },
 
