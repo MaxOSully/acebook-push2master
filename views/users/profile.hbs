@@ -1,42 +1,4 @@
-<!DOCTYPE html>
-<html>
 
-<head>
-  <title>Acebook Profile Page</title>
-  <link rel="stylesheet" type="text/css" href="../../stylesheets/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
-
-</head>
-
-<header>
-  <nav class="navbar navbar-fixed-top navbar-default">
-    <div class="container">
-        <button type="button" class="navbar-toggle">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        
-      <nav class="navbar-fullscreen" id="navbar-middle">
-        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <ul class="navbar-fullscreen-links">
-          <li><a href="/users/profile" title="My Profile Page">My Profile Page</a></li>
-          <li><a href="/posts" title="Posts">Posts</a></li>
-          <li><a href="/users/search" title="Search">Search</a></li>
-          <li><a href="/users/logout" title="Log out">Log out</a></li>
-        </ul>
-
-        <div class="footer-container">
-          <p><small>© We Push Master | Website created with much toil, blood & sweat!</small></p>  
-        </div>
-
-
-      </nav> 
-    
-    </div>
-  </nav>
-</header>
 
 <body>
   <!-- Left column: logo and menu -->
@@ -51,16 +13,16 @@
           <ul>{{user.email}}</ul>
           <br>
           <br>
-          <li class="tm-nav-item tm-button2">
+          <li class="tm-nav-item">
             <button onclick="window.location.href = '/posts';" class="tm-nav-item-link tm-button2">Posts</button>
           </li>
-          <li class="tm-nav-item tm-button2">
+          <li class="tm-nav-item">
             <button onclick="window.location.href = '/posts/new';" class="tm-nav-item-link tm-button2">New Posts</button>
           </li>
-          <li class="tm-nav-item tm-button2">
+          <li class="tm-nav-item">
             <button onclick="window.location.href = '/users/search';" class="tm-nav-item-link tm-button2">Connect & Search</button>
           </li>
-          <li class="tm-nav-item tm-button2">
+          <li class="tm-nav-item">
             <button onclick="window.location.href = '/users/requests';" class="tm-nav-item-link tm-button2">Friend requests</button>
           </li>
     <form action="/users/updatestatus" method="post">
@@ -86,8 +48,8 @@
           <ul> <a href='/users/{{this}}'>{{this}}</a></li>
         {{/each}}
 
-        <form action='/users/logout' method="post" id='logout'>
-          <button type='submit'>Logout</button>
+        <form class="tm-nav-item" action='/users/logout' method="post" id='logout'>
+          <button class="tm-nav-item" type='submit'>Logout</button>
         </form>
 
       </div>
