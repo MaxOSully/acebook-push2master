@@ -1,33 +1,107 @@
-<!DOCTYPE html>
-<html>
 <head>
-   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-
-  <title>Search page</title>
-
-  <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
-
-  <link rel="stylesheet" type="text/css" href="../../public/stylesheets/style.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
-    <link rel="stylesheet" type="text/css" href="../../stylesheets/style.css">
-</head>
-
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
 <body>
+<style>
+body {
+  background-image: url('https://images.unsplash.com/photo-1448275917012-45a8dfb184cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 300px ;
+  object-fit: cover;
+  object-position: 0% 100px;
+  background-position: center bottom;
+  background-position: center -300px;
+  }
+}
 
-<form id="search" type="submit" method="post" action="/users/search">
-  <input id="fullname" name="fullname" type="text" placeholder="Search here">
-  <button type="submit" value="submit"> Search now </button>
+​
+​
+/* .hello{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+​
+/* .searchingbutton {
+  padding-top: 42px;
+  margin-top: -1000px;
+  margin-bottom: 10px;
+  margin-left: 373px;
+  width: 40px;
+  height: 47px;
+  border: 1px solid #006599;
+  background: #006599;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 1;
+} */
+​
+/* .searchtext {
+  width: 100%;
+  border: 3px solid #006599;
+  border-right: none;
+  padding: 5px;
+  height: 50px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  z-index:-1;
+} */
+​
+/* .searchtext:focus{
+  color: #006599;
+} */
+​
+.fa-search:before {
+    content: "\f002";
+    padding: 0px 0px 50px;
+    position: relative;
+    bottom: 35px;
+    /* padding-bottom:100px; */
+  }
+
+  .footer-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #006599;;
+  color: white;
+  text-align: center;
+}
+</style>
+​
+​
+  <h1 style="font-family: 'Verdana', cursive; color:white; text-align: center;
+   text-align: center; margin-top: 178px; margin-bottom: 10px; margin-right: 10px;
+   margin-left: 10px;" class="search"> <strong>Who are you looking for? </strong> </h1>
+​
+<div style="width: 30%;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);" class="hello">
+  <div class="search">
+<form id="search" method="post" action="/users/search">
+  <input style= "padding: 10px;width: 86%;margin-top:50px;width: 90%; border: 3px solid #006599;
+  border-right: none; padding: 5px; height: 50px; border-radius: 5px 0 0 5px; outline: none;
+  color: #9DBFAF;z-index:-1;"id="fullnamesearch" name="fullnamesearch" type="text" class= "searchtext" placeholder="Search here"> </input>
+  <button style = "padding-top: 42px; margin-top: -1000px; margin-bottom: 10px; margin-left: 373px; width: 40px;
+  height: 47px;border: 1px solid #006599;background: #006599;text-align: center;color: #fff;
+  border-radius: 0 5px 5px 0;cursor: pointer; font-size: 20px;z-index: 1;" type=‘submit’ value= "submit" class="searchingbutton"> <i style = "content: \f002;
+  padding: 0px 0px 50px;position: relative;bottom: 35px;"class="fa fa-search"></i>
+     </button>
+</input>
 </form>
-
-
+   </div>
+</div>
+​
+<div class="footer-container">
+  <p><small>© We Push 2 Master | Website created with much toil, blood & sweat!</small></p>
+</div>
+​
 </body>
-
-<script type="text/javascript" src="../../toggle.js"></script>
-<script type="text/javascript" src="../../javascripts/toggle.js"></script>
-<script type="text/javascript" src="../../public/javascripts/toggle.js"></script>
-</html>

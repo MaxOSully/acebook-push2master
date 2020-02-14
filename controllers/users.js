@@ -6,7 +6,7 @@ var Posts = require('../models/post'); // connects to the model which allows you
 
 var UsersController = { // this refers to the class
   Index: function(req, res) { //this refers to the method
-    res.render('users/register', {}); // render the user register page
+    res.render('users/register', { layout: false }); // render the user register page
   },//every method/function needs to be followed by a comma
 
   Create: function(req, res) {
@@ -54,7 +54,7 @@ var UsersController = { // this refers to the class
 
 
   Login: function(req, res) {
-    res.render('users/login', {}); // render the user login page
+    res.render('users/login', { layout: false }); // render the user login page
   },
 
   Authenticate: function(req, res) { //this function is executed and posted when user logins
@@ -139,7 +139,7 @@ var UsersController = { // this refers to the class
 
     Query: function(req, res) {     // this function posts the search result
       // var input = 'ln';
-      Users.find({fullname: new RegExp(req.body.fullname, 'i')}, function(err, foundUsers) {      // find the users in the database with the name you searched (doesn't have to be exact, so can be partially matching because of the regex)
+      Users.find({fullname: new RegExp(req.body.fullnamesearch, 'i')}, function(err, foundUsers) {      // find the users in the database with the name you searched (doesn't have to be exact, so can be partially matching because of the regex)
         if(err) {
           throw err;
         } else if (foundUsers.length !== 0){ //if found users is greater than 0
