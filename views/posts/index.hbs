@@ -53,7 +53,7 @@
               </div>
             </div>
           </div>
-     
+
 
                 <div class="col-lg-9 col-md-6 no-pd">
                   <div class="main-ws-sec">
@@ -91,7 +91,7 @@
                         </div>
                         <div class="epi-sec">
                           <ul class="descp">
-                            
+
                             <li><span> Location: Anywhere in the British Isles or India</span></li>
                           </ul>
                           {{!-- <ul class="bk-links">
@@ -101,12 +101,12 @@
                         </div>
                         <div >
                           <h3>Guess What happened this morning!</h3>
-                          
+
                           <p>{{this.message}}<br><a href="#" title="">view more</a></p>
-                          
+
                           <ul class="job-dt">
                             <li><span> Have your say... </span></li>
-                            <li><a href="#" title="">Add a comment</a></li>
+                            <li><a href="/posts/{{this.id }}" title="">Add a comment</a></li>
                           </ul>
 
                           Friends Tagged in this post
@@ -118,8 +118,8 @@
                         </div>
                         <div class="job-status-bar">
                           <ul class="like-com">
-                             
-                            <li><a href="/posts/{{this.id }}" class="com"><i class="fas fa-comment-alt"></i> Comments</a></li>
+
+                            <li><a href="#" class="com"><i class="fas fa-comment-alt"></i> Comments</a></li>
                             {{#each this.comments }}        <!--   for each comment in the array print -->
                             <ul> {{this}} </ul>
                               {{/each}}
@@ -133,13 +133,12 @@
                       </div>
                     </div>
                     {{/each}}
-                   </div> 
+                   </div>
                   </div>
 
                 </div>
               </div>
             </div>
           </div>
-    
-  </main>                        
-  
+
+  </main>

@@ -17,7 +17,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
-  
+
 <link rel="stylesheet" type="text/css" href="../../public/stylesheets/style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
@@ -39,21 +39,20 @@
           <ul>{{user.email}}</ul>
           <br>
           <br>
-          <li class="tm-nav-item tm-button2">
+          <li class="tm-nav-item">
             <button onclick="window.location.href = '/posts';" class="tm-nav-item-link tm-button2">Posts</button>
           </li>
-          <li class="tm-nav-item tm-button2">
+          <li class="tm-nav-item">
             <button onclick="window.location.href = '/posts/new';" class="tm-nav-item-link tm-button2">New Posts</button>
           </li>
-          <li class="tm-nav-item tm-button2">
+          <li class="tm-nav-item">
             <button onclick="window.location.href = '/users/search';" class="tm-nav-item-link tm-button2">Connect & Search</button>
           </li>
-          <li class= "tm-nav-item tm-button2">
-            <form id="friend-request-form" method="post" action="/users/{{user.username}}">
+          <li class= "tm-nav-item">
+            <form class= "tm-nav-item" id="friend-request-form" method="post" action="/users/{{user.username}}">
             <input onclick="change()" type="submit" value="Add Friend" id="myButton1" />
           </form>
           <br>
-          <ul class="tm-nav-item">Date joined Acebook: {mm/year} </ul>
         </ul>
       </div>
     </div>

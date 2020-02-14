@@ -40,12 +40,11 @@
 </form>
 
           <br>
-          <ul>Date joined Acebook: {mm/year} </ul>
         </ul>
         <br>
         <ul> Friends with: </ul>
         {{#each user.friendslist}}
-          <ul> <a href='/users/{{this}}'>{{this}}</a></li>
+        <ul> <a href='/users/{{this}}'>{{this}}</a></ul>
         {{/each}}
 
         <form class="tm-nav-item" action='/users/logout' method="post" id='logout'>

@@ -28,7 +28,7 @@ body {
 .tm-blue-bg {
 	background-color: #006599;
   color: white;
-  
+
 }
 .tm-main-nav { display: none; }
 
@@ -37,8 +37,8 @@ body {
 	padding-left: 0;
 }
 
-.tm-left-column { 
-  position: absolute; 
+.tm-left-column {
+  position: absolute;
   height: auto;
 }
 
@@ -56,7 +56,7 @@ body {
   list-style: none;
   padding: 18px 30px;
   transition: all 0.3s ease;
-  
+
 }
 
 .tm-button {
@@ -65,7 +65,7 @@ body {
 	color: white;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 1rem;	
+	font-size: 1rem;
 	padding: 10px 3px;
 	border-radius: 40px;
 }
@@ -76,7 +76,7 @@ body {
 	color: #006599;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 1rem;	
+	font-size: 1rem;
 	padding: 10px 60px;
 	border-radius: 40px;
 }
@@ -511,7 +511,7 @@ h1 {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     grid-gap: 10px;
-    
+
   }
 
   .item1 {
@@ -531,8 +531,8 @@ h1 {
     }
 
 .posttitle {
-  text-align: center; 
-  color:white; 
+  text-align: center;
+  color:white;
   background-color: rgb(59, 59, 226)
 
 }
@@ -596,4 +596,14 @@ Style page content - use this if you want to push the page content to the right 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
+
+
+  ​.footer-container2 {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #006599;;
+    color: white;
+    text-align: center;
+  }
