@@ -28,7 +28,7 @@ body {
 .tm-blue-bg {
 	background-color: #006599;
   color: white;
-  
+
 }
 .tm-main-nav { display: none; }
 
@@ -37,8 +37,8 @@ body {
 	padding-left: 0;
 }
 
-.tm-left-column { 
-  position: absolute; 
+.tm-left-column {
+  position: absolute;
   height: auto;
 }
 
@@ -56,7 +56,7 @@ body {
   list-style: none;
   padding: 18px 30px;
   transition: all 0.3s ease;
-  
+
 }
 
 .tm-button {
@@ -65,7 +65,7 @@ body {
 	color: white;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 1rem;	
+	font-size: 1rem;
 	padding: 10px 3px;
 	border-radius: 40px;
 }
@@ -76,7 +76,7 @@ body {
 	color: #006599;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 1rem;	
+	font-size: 1rem;
 	padding: 10px 60px;
 	border-radius: 40px;
 }
@@ -497,6 +497,9 @@ h1 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
+
+  .rposts1 {
+    
   .box-shad{
     box-shadow: 0 4px 8px 0 rgba(4, 49, 248, 0.63), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
@@ -519,6 +522,7 @@ h1 {
   }
 
   .rposts2 {
+
     border-radius: 47px;
     background: rgb(72, 127, 179);
     position: relative;
@@ -597,3 +601,79 @@ Style page content - use this if you want to push the page content to the right 
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+.footer-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #006599;;
+  color: white;
+  text-align: center;
+}
+
+h1.search {
+ text-align: center;
+ margin-top: 178px;
+ margin-bottom: 10px;
+ margin-right: 10px;
+ margin-left: 10px;
+ color: white;
+}
+
+#fullnamesearch{
+  padding: 10px;
+  width: 86%;
+  margin-top:50px;
+  /* margin-top:50px: */
+  /* position: relative; */
+}
+
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.searchButton {
+  padding-top: 42px;
+  margin-top: -1000px;
+  margin-bottom: 10px;
+  margin-left: 373px;
+  width: 40px;
+  height: 47px;
+  border: 1px solid #006599;
+  background: #006599;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #006599;
+  border-right: none;
+  padding: 5px;
+  height: 50px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  z-index:-1;
+}
+
+.searchTerm:focus{
+  color: #006599;
+}
+
+.fa-search:before {
+    content: "\f002";
+    padding: 0px 0px 50px;
+    position: relative;
+    bottom: 35px;
+    /* padding-bottom:100px; */
+  }

@@ -1,48 +1,83 @@
-<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+<body>
+<style>
+body {
+  background-image: url('https://images.unsplash.com/photo-1448275917012-45a8dfb184cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 300px ;
+  object-fit: cover;
+  object-position: 0% 100px;
+  background-position: center bottom;
+  background-position: center -300px;
+  }
+}
+.list {
+  font-family:sans-serif;
+  margin:0;
+  padding:20px 0 0;
 
-<header>
-  <nav class="navbar navbar-fixed-top navbar-default">
-    <div class="container">
-        <button type="button" class="navbar-toggle">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        
-      <nav class="navbar-fullscreen" id="navbar-middle">
-        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <ul class="navbar-fullscreen-links">
-          <li><a href="/users/profile" title="My Profile Page">My Profile Page</a></li>
-          <li><a href="/posts" title="Posts">Posts</a></li>
-          <li><a href="/users/search" title="Search">Search</a></li>
-          <li><a href="/users/logout" title="Log out">Log out</a></li>
-        </ul>
+}
+.list > li {
+  display:block;
+  background-color: #eee;
+  padding:40px;
+  box-shadow: inset 0 1px 0 #fff;
+  border: 3px solid #006599;
+  border-radius: 5px 0 0 5px;
+  padding-left: 5em;
+  opacity: 0.5;
+  margin-right: 35px;
+  border-radius: 25px;
 
-        <div class="footer-container">
-          <p><small>© We Push Master | Website created with much toil, blood & sweat!</small></p>  
-        </div>
+}
+h3 {
+  font-size: 20px;
+  margin:0 0 0.3rem;
+  font-weight: normal;
+  font-weight:bold;
+
+}
+p {
+  margin:0;
+  /* font-size: 15px; */
+}
 
 
-      </nav> 
-    
-    </div>
-  </nav>
-</header>
+.footer-container{
+  height: 37px;
 
-<html>
+}
 
-<title> Search Results Page </title>
+h1.search {
+ margin-top: 0px;
+}
+
+
+</style>
+
+<h1 style="font-family: 'Verdana', cursive" class="search"> <strong>Search Results </strong> </h1>
+
+
+<div class="footer-container">
+  <p><small>© We Push 2 Master | Website created with much toil, blood & sweat!</small></p>
+</div>
+
 
 <body>
-<h1 class="list">
-{{#each users}}              <!-- for each post in the db print all of the below -->
-<li>{{this.fullname}}</li>
-<li>{{this.username}}</li>
-<li> <a href='/users/{{this.username}}'> View profile</a></li>
-<p> ----------------- </p>
+<ul class="list">
+{{#each foundUsers}}              <!-- for each post in the db print all of the below -->
+<li>
+  <h3>{{this.fullname}} </h3>
+  <p> {{this.email}}</p>
+<p><a href='/users/{{this.username}}'> View profile</a></p>
+</li>
 {{/each}}
-</h1>
+</ul>
 </body>
 
 <script type="text/javascript" src="../../toggle.js"></script>
