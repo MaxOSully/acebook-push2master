@@ -1,0 +1,44 @@
+
+<link rel='stylesheet' href='../../public/stylesheets/style.css'>
+<link rel='stylesheet' href='../../public/stylesheets/magnific-popup.css'>
+<link rel='stylesheet' href='../../public/stylesheets/matey.min.css'>
+
+
+
+
+<body>    
+    <h1 class="posttitle"> Posts by Acebook Users</h1>
+    <ul class="posts">
+      {{#each posts}}     <!-- for each post in the db print all of the below -->
+      <div style="margin-bottom: 5px" class="rposts1">   
+      {{this.time}}
+      <ul>{{this.message}}</ul>
+     
+      <li>Posted by: {{this.postedby}}</li>
+      <br>
+      <ul>
+       <div style="margin-bottom: 5px" class="rposts2">  
+        People tagged in this post:
+        {{#each this.tags}}
+          <li>{{this}}</li>
+        {{/each}}
+        </div>
+      </ul>
+      </div>
+      <a href="/posts/{{this.id }}"> Add A Comment</a>
+      {{#each this.comments }}        <!--   for each comment in the array print -->
+        <ul> {{this}} </ul>
+          {{/each}}
+      
+      {{/each}}
+   
+
+    <a href="/posts/new">New post</a>
+    <br>
+    <a href="/users/profile">View profile</a>
+
+    <form action='/users/logout' method="post" id='logout'>
+    <button type='submit'>Logout</button>
+    </form>
+
+</body>

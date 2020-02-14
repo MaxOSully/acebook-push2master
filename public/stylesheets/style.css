@@ -1,9 +1,8 @@
-/* body {
-  padding: 50px;
+body {
+  /* padding: 50px; */
   font: 14px "BlinkMacSystemFont", Helvetica, Arial, sans-serif;
-  margin: 0;
-  text-align: center;
-} */
+  /* margin: 0; */
+}
 
 .row { display: block; }
 .tm-left-right-container { width: 100%; }
@@ -15,6 +14,12 @@
   /* object-position: 20% 10px; */
 }
 
+.cropped2{
+  width: 15%;
+  height: 100px ;
+  object-fit: cover;
+  object-position: 40% 0px;
+}
 .loveimage{
   width: 200px;
   height: 300px ;
@@ -88,16 +93,20 @@
 .tm-margin-b-30 { margin-bottom: 30px; }
 
 p {
-  font-family: "Helvetica";
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+li {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 a {
-  font-family: "Helvetica";
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 h1 {
  text-align: left;
- font: 200% "Helvetica";
+ font: 200% 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 .overlayLogo {
@@ -477,7 +486,7 @@ h1 {
 	.tm-nav-item { font-size: 1rem; }
 }
 .rposts1 {
-	border-radius: 47px;
+	border-radius: 22px;
 	background: rgb(150, 196, 240);
 	position: relative;
   padding: 20px;
@@ -485,18 +494,49 @@ h1 {
   margin: 10px 80px;
   font-family: Arial, Helvetica, sans-serif;
   padding-left: 5em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-  
-  .rposts1 {
+
+  .box-shad{
+    box-shadow: 0 4px 8px 0 rgba(4, 49, 248, 0.63), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .brand-logo {
+    margin-left: 0px;
+    width: 180px;
+    height: 160px
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10px;
+    
+  }
+
+  .item1 {
+    grid-column: 1 / 7;
+  }
+
+  .rposts2 {
     border-radius: 47px;
-    background: rgb(150, 196, 240);
+    background: rgb(72, 127, 179);
     position: relative;
     padding: 20px;
-    /* opacity: 0.5; */
+    opacity: 0.5;
     margin: 10px 80px;
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
+
+.posttitle {
+  text-align: center; 
+  color:white; 
+  background-color: rgb(59, 59, 226)
+
+}
+
 
   /* The side navigation menu */
 .sidenav {
@@ -504,19 +544,19 @@ h1 {
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  top: 0; Stay at the top
   left: 10px;
   background-color: rgb(150, 196, 240); /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
+  padding-top: 0px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 12px 8px 8px 40px;
+  padding: 2px 0px 0px 40px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 15px;
   color: #ffff;
   display: block;
   transition: 0.3s;
