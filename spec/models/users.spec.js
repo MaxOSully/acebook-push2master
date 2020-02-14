@@ -36,15 +36,15 @@ describe('Users model', function() {
 
 
     // it('updates the bio page for user', function(done) {
-    //     var users = new Users({ fullname: 'Joe Bloggs', email: 'user@WP2M.com', username: 'usernameWP2M', password: 'password123', bio: 'This is your bio, please update. Click the edit button to do so.'});
-    //     users.save(function(err) {
-    //             expect(err).toBeNull();
-
+    //     var users = new Users({ fullname: 'Joe Bloggs', email: 'user@WP2M.com', username: 'usernameWP2M', password: 'password123', bio: 'This is your bio, please update. Click the edit button to do so.'});   
+    //     users.save(function(err) { 
+    //             expect(err).toBeNull(); 
+            
     //         Users.find(function(user) {
-    //             console.log(user);
+    //             console.log(user);  
     //            user[0].bio = 'This is my bio, about my amazing self'
     //             users.save(function(err) {
-    //                 expect(err).toBeNull();
+    //                 expect(err).toBeNull(); 
     //              });
     //         });
     //     });
