@@ -134,12 +134,12 @@ var UsersController = { // this refers to the class
     },
 
     Search: function(req, res) {    // renders the page to search for a users name
-      res.render('users/search')
+      res.render('users/search', { title: "Search Page" })
     },
 
     Query: function(req, res) {     // this function posts the search result
       // var input = 'ln';
-      Users.find({fullname: new RegExp(req.body.fullname, 'i')}, function(err, foundUsers) {      // find the users in the database with the name you searched (doesn't have to be exact, so can be partially matching because of the regex)
+      Users.find({fullname: new RegExp(req.body.fullnamesearch, 'i')}, function(err, foundUsers) {      // find the users in the database with the name you searched (doesn't have to be exact, so can be partially matching because of the regex)
         if(err) {
           throw err;
         } else if (foundUsers.length !== 0){ //if found users is greater than 0
@@ -155,7 +155,8 @@ var UsersController = { // this refers to the class
 
     Results: function(req, res) {
       var foundUsers = req.cookies['foundUsers'];         // set foundusers to the cookie (passed from previous function)
-      res.render('users/search-results', {users: foundUsers});     // render the page listing the found users with links to their profiles
+      console.log(foundUsers)
+      res.render('users/search-results', { foundUsers: foundUsers, title: "Search Results Page" });     // render the page listing the found users with links to their profiles
     },
 
     ViewProfile: function(req, res) { //this renders other users profile - this comes from the users/index view which includes a link that posts the searched user's username
